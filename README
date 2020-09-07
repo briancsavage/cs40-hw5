@@ -1,0 +1,87 @@
+Date last modified: March 5th, 2020
+Vichka Fonarev and Brian Savage
+vfonar01    and     bsavag01
+
+Comp40 - HW4 - Arith
+README
+
+-------------------------------------------------------------------------------
+
+To compile: 
+    make all -> ppmdiff, 40image, testbit
+    make ppmdiff -> ppmdiff
+    make 40image -> 40image
+    make testbit -> testbit
+    make clean -> removes ppmdiff 40image testbit executables
+
+-------------------------------------------------------------------------------
+
+40image commands
+        to compress -> ./40image -c [ppm filename] -> Compressed image format
+      to decompress -> ./40image -d [compressed image] -> decompress ppm file 
+
+ppmdiff commands
+        to compare -> ./ppmdiff [ppm image 1] [ppm image 2]
+
+testbit commands
+        to test -> ./testbit -> if no errors occur, nothing is printed out
+                                and EXIT_SUCCESS is returned
+                                if error occurs, assertion will be raised
+
+
+-------------------------------------------------------------------------------
+
+Architecture:
+    compress40.c:   This contains the implementation for compress and
+                    decompression. Relies on UArray2b, a2plain methods
+                    and used Bitpack.c for bitpacking the compressed data
+                    into words that are printed.
+
+    a2plain.c:  This is the methods suite for the uarray2 interface.
+                In this implementation we only support unblocked arrays.
+                (no unblocked implementation exists in this directory) 
+
+    40image.c:  This contains the main for compression and decompression.
+                This file also handles the command line args, and opening
+                files
+
+    bitpack.c: This is the implementation of bitpack. It performs field
+               extraction, field update, and width test functions on a word. 
+                   The primary role of bitpack is to abstract bitpacking and
+                   unpacking to be used within compress40.c.
+
+    bitpack.h: This is the interface of bitpack. It performs field
+               extraction, field update, and width test functions on a word.
+                   The primary role of bitpack is to abstract bitpacking and 
+                   unpacking to be used within compress40.c.
+
+    ppmdiff.c: This program takes two ppm images and returns (as a percent)
+               how different they are. Relies on uarray2 for array
+               representation of pixels in images. Uses math provided in
+               arith spec for calculating the difference
+
+    testBit.c: This is a test main for our bitpacking functions. We validate
+               the outputs of each function within bitpack by performing the
+                   same operations by hand, and assert that the value returned 
+               from the functions matches our computed values by hand.
+
+    uarray2.c: This is a 2D implementation of Hansons Unboxed
+               Arrays. The UArray2 handles mapping, dimension getting, and 
+               memory allocation/freeing.
+
+    uarray2.h: This is a 2D interface of Hansons Unboxed
+               Arrays. The UArray2 handles mapping, dimension getting, and 
+               memory allocation/freeing.
+
+-------------------------------------------------------------------------------
+
+Time Estimates:
+    We spent roughly 4 hours planning the assignment
+    and roughly 40 hours implementing everything.
+
+    We spent about 5 hours writing unit tests to validate the outputs of 
+    bitpack.
+
+-------------------------------------------------------------------------------
+
+We believe that all aspects of the assignment have been implemented properly.
