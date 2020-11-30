@@ -1,11 +1,5 @@
-/* Last Modified: March 5th, 2020
- * Brian Savage and Vichka Fonarev
- * bsavag01         vfonar01
- * 
- * Comp40 - HW4 - Arith
- * bitpack.h
- * Does: interface for bitpacking
- * Possible Errors: Handles all unit testing and (de)compression properly
+/* 
+ * interface for bitpacking
  */
 
 #ifndef BITPACK_INCLUDED
