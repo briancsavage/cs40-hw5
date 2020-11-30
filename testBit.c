@@ -1,10 +1,5 @@
-/* Last Modified: March 5th, 2020
- * Brian Savage and Vichka Fonarev
- * bsavag01         vfonar01
- * 
- * Comp40 - HW4 - Arith
- * testBit.c
- * Does: unit testing for bitpacking
+/* 
+ * unit testing for bitpacking
  */
 
 #include "bitpack.h"
