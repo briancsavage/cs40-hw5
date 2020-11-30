@@ -1,15 +1,9 @@
-/* Last Modified: March 5th, 2020
- * Brian Savage and Vichka Fonarev
- * bsavag01         vfonar01
- * 
- * Comp40 - HW4 - Arith
- * bitpack.c
+/* 
  * Does: compresses and decompresses ppm images
  * Uses: -c [ppm image to compress] -> outputs a COMP40 Compressed image 
  *                                                              format 2
  *       -d [COMP40 Compressed image format 2] -> outs a decompressaed
  *                                                           ppm image
- * Possible Errors: Handles all unit testing and (de)compression properly
  */
 
 #include <stdio.h>
