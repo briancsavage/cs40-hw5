@@ -1,10 +1,3 @@
-Date last modified: March 5th, 2020
-Vichka Fonarev and Brian Savage
-vfonar01    and     bsavag01
-
-Comp40 - HW4 - Arith
-README
-
 -------------------------------------------------------------------------------
 
 To compile: 
@@ -74,14 +67,3 @@ Architecture:
                memory allocation/freeing.
 
 -------------------------------------------------------------------------------
-
-Time Estimates:
-    We spent roughly 4 hours planning the assignment
-    and roughly 40 hours implementing everything.
-
-    We spent about 5 hours writing unit tests to validate the outputs of 
-    bitpack.
-
--------------------------------------------------------------------------------
-
-We believe that all aspects of the assignment have been implemented properly.
