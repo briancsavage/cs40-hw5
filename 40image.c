@@ -1,10 +1,5 @@
-/* Last Modified: March 5th, 2020
- * Brian Savage and Vichka Fonarev
- * bsavag01         vfonar01
- * 
- * Comp40 - HW4 - Arith
- * 40image.c
- * Does: contains main for compression and decompression
+/* 
+ * contains main for compression and decompression
  */
 
 #include <string.h>
